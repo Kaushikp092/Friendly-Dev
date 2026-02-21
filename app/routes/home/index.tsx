@@ -1,5 +1,4 @@
 import type { Route } from "./+types/index";
-import { useEffect } from "react";
 
 export function meta({}: Route.MetaArgs) {
 	return [
@@ -9,19 +8,9 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  // const now = new Date().toDateString();
-  // if(typeof window === 'undefined'){
-  //   console.log('Server render at:', now);
-  // }else{
-  //   console.log('Client hydration at:', now);
-  // }
-	
-
-  useEffect(() => {console.log(window.scrollX);}, []);
-  
 	return (
 		<>
-			<section>My App</section>
+			<>Home Page</>
 		</>
 	);
 }

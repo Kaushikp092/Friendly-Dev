@@ -19,7 +19,7 @@ const Navbar = () => {
 				</NavLink>
 
 				{/* Desktop Nav */}
-				<div className="hidden md:flex items-center fap-6">
+				<div className="hidden md:flex items-center gap-6">
 					<div className="space-x-4 text-sm text-gray-300">
 						<NavLink
 							className={({ isActive }) => (isActive ? active : base)}
